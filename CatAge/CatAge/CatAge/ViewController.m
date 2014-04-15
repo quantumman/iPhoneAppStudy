@@ -11,6 +11,7 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *catAgeField;
 @property (weak, nonatomic) IBOutlet UILabel *humanAgeLabel;
+- (IBAction)calculate:(id)sender;
 
 @end
 
@@ -28,4 +29,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)calculate:(id)sender {
+}
 @end
