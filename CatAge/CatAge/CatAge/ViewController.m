@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *humanAgeLabel;
 - (IBAction)calculate:(id)sender;
 
+- (double) catAgeToHumanAge:(double)catAge;
+
 @end
 
 @implementation ViewController
@@ -31,4 +33,22 @@
 
 - (IBAction)calculate:(id)sender {
 }
+
+- (double)catAgeToHumanAge:(double)catAge
+{
+    double age;
+    if (catAge <= 1)
+        age = 20 * catAge;
+    else if (catAge <= 5)
+        age = catAge * 6 + 15;
+    else if (catAge <= 10)
+        age = catAge * 5 + 20;
+    else if (catAge <= 15)
+        age = catAge * 4 + 30;
+    else
+        age = catAge * 3 + 45;
+
+    return age;
+}
+
 @end
