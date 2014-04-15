@@ -32,6 +32,9 @@
 }
 
 - (IBAction)calculate:(id)sender {
+    double catAge = [_catAgeField.text doubleValue];
+    double humanAge = [self catAgeToHumanAge:catAge];
+    _humanAgeLabel.text = [NSString stringWithFormat:@"%.1f歳", humanAge];
 }
 
 - (double)catAgeToHumanAge:(double)catAge
