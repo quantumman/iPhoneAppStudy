@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *catAgeField;
+@property (weak, nonatomic) IBOutlet UILabel *humanAgeLabel;
 
 @end
 

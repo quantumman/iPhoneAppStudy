@@ -53,6 +53,7 @@
                     </view>
                     <connections>
                         <outlet property="catAgeField" destination="TaT-Qg-xgp" id="QNv-5f-HcQ"/>
+                        <outlet property="humanAgeLabel" destination="a3U-3m-W5l" id="KM3-Rt-w1J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
