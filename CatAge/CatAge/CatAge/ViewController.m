@@ -54,4 +54,16 @@
     return age;
 }
 
+#pragma Validations
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range
+                                                        replacementString:(NSString *)string
+{
+    NSMutableString* catAge = [_catAgeField.text mutableCopy];
+    [catAge replaceCharactersInRange:range withString:string];
+
+    BOOL isOverAgedLimit = 100 < [catAge doubleValue];
+    return !isOverAgedLimit;
+}
+
 @end

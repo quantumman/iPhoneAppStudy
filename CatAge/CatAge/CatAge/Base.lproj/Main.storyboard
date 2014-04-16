@@ -30,6 +30,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="calculate:" destination="vXZ-lx-hvc" eventType="editingChanged" id="NSP-Ke-hPX"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="PVB-C1-TfU"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0歳" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3U-3m-W5l">
