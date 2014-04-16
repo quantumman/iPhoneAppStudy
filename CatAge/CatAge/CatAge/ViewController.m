@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *catAgeField;
 @property (weak, nonatomic) IBOutlet UILabel *humanAgeLabel;
 - (IBAction)calculate:(id)sender;
+- (IBAction)tapBackground:(id)sender;
 
 - (double) catAgeToHumanAge:(double)catAge;
 
@@ -52,6 +53,10 @@
         age = catAge * 3 + 45;
 
     return age;
+}
+
+- (IBAction)tapBackground:(id)sender {
+    [self.view endEditing:YES];
 }
 
 #pragma Validations
