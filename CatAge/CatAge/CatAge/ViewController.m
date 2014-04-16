@@ -63,7 +63,8 @@
     [catAge replaceCharactersInRange:range withString:string];
 
     BOOL isOverAgedLimit = 100 < [catAge doubleValue];
-    return !isOverAgedLimit;
+    BOOL isOverLengthLimit = 4 < [catAge length];
+    return !isOverAgedLimit && !isOverLengthLimit;
 }
 
 @end
